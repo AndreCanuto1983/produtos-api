@@ -12,11 +12,10 @@ app.AddProdutosControllers();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
-
 //app.UseAuthentication();
 //app.UseAuthorization();
 
 if (Debugger.IsAttached)
     app.Run();
 else
-    app.Run("http://0.0.0.0:8081");
+    app.Run("http://0.0.0.0:443");
